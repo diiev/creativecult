@@ -1,4 +1,71 @@
 .header {
     background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
-    height: 400px;
+    padding-top: 16px;
+    // height: 400px;
+    &__logo {
+        margin-right: 20px;
+    }
+     &__top {
+        display: flex;
+        align-items: center;
+        a {
+          
+            transition: all .3s ease-in-out;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            color: rgba(0, 0, 0, .3);
+            &:hover {
+
+                color: #234ee4;
+            }
+        }
+        &-logolinks {
+            display: flex;
+            align-items: center;
+            border-radius: 100px;
+            padding: 8px 32px;
+            background: #fff;
+            width: 850px;
+            }
+            &-links {
+                display: flex;
+                gap: 16px;
+            }
+            &-search {
+                margin-left: auto;
+                width: 40%;
+                input {
+                    width: 100%;
+                    transition: all .3s ease-in-out;
+                    padding: 8px 15px;
+                    border: none;
+                    border-radius: 25px;
+                    outline: 1px groove transparent;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 100%;
+                    color: rgba(0, 0, 0, .4);
+                    &:focus, &:active {
+                        outline:1px groove #234ee4;
+                    }   
+                }
+            }
+     }
+    &__lang {
+        border-radius: 100px;
+        padding: 8px 9px;
+        width: 94px;
+        height: 58px;
+        background: #fff;
+    }
+    &__contacts {
+        background: #fff;
+        border-radius: 100px;
+        padding: 8px 9px;
+        width: 258px;
+        height: 58px;
+    }
 }
