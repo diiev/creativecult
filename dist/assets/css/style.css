@@ -252,6 +252,7 @@ a {
     --font-family: "Manrope", sans-serif;
     --second-family: "Nunito Sans", sans-serif;
     --main-color: #101010;
+    --hover-color: #234ee4;
 }
 
 * {
@@ -262,6 +263,24 @@ a {
     background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
     padding-top: 16px;
     position: relative;
+}
+
+.header .one_bg {
+    position: absolute;
+    right: 0;
+    rotate: 360deg;
+    z-index: 1;
+    bottom: 532px;
+}
+
+.header .two_bg {
+    position: absolute;
+}
+
+.header .three_bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .header__logo {
@@ -283,7 +302,7 @@ a {
 }
 
 .header__top a:hover {
-    color: #234ee4;
+    color: var(--hover-color);
 }
 
 .header__top-logolinks {
