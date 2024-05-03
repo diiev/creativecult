@@ -1,0 +1,43 @@
+.btitle {
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 100%;
+        color: var(--bg-color);
+        &_purple {
+            font-size: 48px;
+        }
+        &-slash {
+            color: #4ad6ff;
+            &_purple {
+                color: #6549d4;
+                margin-right: 10px;
+            }
+        }
+        &-sub {
+            margin-top: 16px;
+            display: block;
+            border-radius: 100px;
+            padding: 10px 32px 20px 32px;
+            width: 663px;
+            background: #4ad6ff; 
+            &_purple {
+                background: #6549d4;
+                padding: 10px 32px 16px 32px;
+                
+            }
+        }
+
+    }
+    &__text {
+        margin-top: 32px;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: rgba(252, 252, 252, .8);
+        max-width: 560px;
+    }
+
+}

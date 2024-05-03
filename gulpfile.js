@@ -177,7 +177,7 @@ function watchFiles() {
    // gulp.watch([path.watch.video], video)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, webpImages, fonts,video))
+const build = gulp.series(clean, gulp.parallel(html, css, js, images,  fonts,video))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 
@@ -187,7 +187,7 @@ exports.html = html;
 exports.css = css;
 exports.js = js
 exports.images = images;
-exports.webpImages = webpImages;
+//exports.webpImages = webpImages;
 exports.fonts = fonts;
 exports.video = video;
 exports.clean = clean;
