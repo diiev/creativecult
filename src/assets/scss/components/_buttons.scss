@@ -3,6 +3,9 @@
     gap: 8px;
     justify-content: space-between;
     align-items:center;
+    border:none;
+    outline: none;
+    cursor: pointer;
     border-radius: 50px;
     padding: 10px 32px;
     font-family: var(--font-family);
@@ -10,32 +13,38 @@
     font-size: 14px;
     line-height: 160%;
     color: var(--bg-color);
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
     svg {
         path {
             transition: all .3s ease-in-out;
         }
-    }
+    } 
+    &:hover {
+        color:var(--bg-color); 
+        background: #145cef;
+        svg {
+            path {
+                fill: var(--bg-color);
+            }
+          }
+     } 
     &_deepblue {
         background: #145cef;
         &:hover {
             
               background: darken(#145cef, 10%);
-             
         }
     }
     &_gray {
          background: #D5E2FC;
          color: #145cef;
-         &:hover {
-            color:var(--bg-color); 
-            background: #145cef;
-            svg {
-                path {
-                    fill: var(--bg-color);
-                }
-              }
-         } 
+        
          
+    }
+    &_white {
+        background: var(--bg-color);
+        width: 100%;
+        justify-content: center;
+        color: #145cef;  
     }
 }

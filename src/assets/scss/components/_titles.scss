@@ -1,3 +1,10 @@
+.title {
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+color: #101010;
+}
 .btitle {
     &__title {
         font-family: var(--font-family);

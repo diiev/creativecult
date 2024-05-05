@@ -1,0 +1,17 @@
+.rectangle {
+    position:  absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 64px;
+    border-radius: 0px 0px 64px 64px;
+  
+ 
+
+    &_blue {
+        background: #01071dfb;
+    }
+    &_gray {
+        background: #dcdde0;
+    }
+}

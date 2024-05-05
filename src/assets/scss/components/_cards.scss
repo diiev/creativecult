@@ -1,11 +1,12 @@
 .cards {
   display: grid;
   grid-template-columns: 596px 596px;
-  gap: 8px;
-  padding-bottom: 100px;
-  
+  column-gap: 8px;
+  row-gap: 8px;
+ 
   .card {
-    border-radius: 32px 32px 32px 32px;
+    position: relative;
+    border-radius: 32px 32px 64px 64px;
     &__content {
         margin-top: 104px;
         border-radius: 32px;
@@ -22,6 +23,11 @@
         font-size: 32px;
         line-height: 104%;
         color: #101010;
+    }
+    &__img {
+        position: absolute;
+        z-index: -1;
+        border-radius: 32px 32px 64px 64px;
     }
     &__descr {
         margin-top: 16px;
@@ -69,11 +75,40 @@
             background:#f47616; 
         }
     }
+    &_orangegrd {
+        background: linear-gradient(217deg, rgb(203, 94, 5) 0%, rgb(238, 84, 23) 52%, rgba(239, 149, 58, 0.9) 100%);
+    }
+    &_orangeyell {
+        background:linear-gradient(217deg, rgba(218,222,57,1) 0%, rgba(204,36,36,1) 49%, rgba(190,83,25,1) 100%);
+    }
     &_green {
         background: linear-gradient(225deg, #5ce1a9 0%, #00ce88 51.04%, #008973 100%);
         .card__tag {
             background: #02cc89; 
         }
+    } 
+    &_darkgreen {
+        background: url('../img/card_darkgreen.png') no-repeat  center / cover;
     }
-  }
+    &_lightgreen {
+        background: url('../img/card_lightgreen.png') no-repeat  center / cover;
+    } 
+  
+  } 
+  &_394 {
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 394px);
+       .card {
+        z-index: 1; 
+        border-radius: 32px;
+       
+       }
+        .card__title {
+        font-size: 18px;
+        line-height: 120%;
+        }
+        .card__content {
+            margin-top: 160px;
+        }
+    }
 }
