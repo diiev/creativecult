@@ -838,6 +838,10 @@ a {
     grid-template-columns: 596px 596px;
 }
 
+.cards_596 .card__descr {
+    margin-top: 0;
+}
+
 .nordcore {
     position: relative;
     padding: 160px 0px 120px 0;
