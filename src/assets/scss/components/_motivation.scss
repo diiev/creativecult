@@ -1,0 +1,25 @@
+.motivation {
+    padding: 180px 0;
+    background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
+    position: relative;
+
+    &::before {
+        content: '';
+        position:  absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: url('../img/man_bg.png') no-repeat 85% / contain;
+        
+    }
+    &__btns {
+        margin-top: 96px;
+        display: flex;
+        align-items: center;
+        .btn_dark {
+            width: max-content;
+        }
+    }
+    
+}

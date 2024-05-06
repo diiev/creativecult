@@ -1,0 +1,22 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: 50px;
+    padding: 10px 32px;
+    background: rgba(252, 252, 252, 0.12);
+    width: 475px;
+    margin-top: 20px;
+ 
+    &__tab {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    transition: all .3s ease-in-out;
+    color:  #fcfcfcae;
+    &:hover, &_active {
+        color: var(--bg-color);
+    }
+    }
+}

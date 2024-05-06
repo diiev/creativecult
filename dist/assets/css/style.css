@@ -312,6 +312,12 @@ a {
     color: #145cef;
 }
 
+.btn_dark {
+    background: rgba(252, 252, 252, 0.2);
+    width: 100%;
+    justify-content: center;
+}
+
 .rectangle {
     position: absolute;
     width: 100%;
@@ -327,6 +333,24 @@ a {
 
 .rectangle_gray {
     background: #dcdde0;
+}
+
+.rectangle_cases {
+    background: #ededed;
+}
+
+.rectangle_media {
+    background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
+}
+
+.rectangle_motivation {
+    background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
+    top: -64px;
+    border-radius: 64px 64px 0px 0px;
+}
+
+.rectangle_feedback {
+    background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
 }
 
 .header {
@@ -556,7 +580,11 @@ a {
     font-weight: 600;
     font-size: 48px;
     line-height: 100%;
-    color: #101010;
+    color: var(--main-color);
+}
+
+.title_white {
+    color: var(--bg-color);
 }
 
 .btitle__title {
@@ -573,11 +601,15 @@ a {
 
 .btitle__title-slash {
     color: #4ad6ff;
+    margin-right: 10px;
 }
 
 .btitle__title-slash_purple {
     color: #6549d4;
-    margin-right: 10px;
+}
+
+.btitle__title-slash_green {
+    color: #02cc89;
 }
 
 .btitle__title-sub {
@@ -673,9 +705,12 @@ a {
 }
 
 .cards .card__img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
     position: absolute;
     z-index: -1;
-    border-radius: 32px 32px 64px 64px;
+    border-radius: 32px 32px 0px 0px;
 }
 
 .cards .card__descr {
@@ -699,12 +734,21 @@ a {
     font-size: 14px;
     line-height: 104%;
     color: var(--bg-color);
+    background: #f47616;
     border-radius: 50px;
     padding: 10px 24px 12px 24px;
 }
 
 .cards .card__tag_circle {
     padding: 10px 13px 12px 13px;
+}
+
+.cards .card__tag_green {
+    background: #02cc89;
+}
+
+.cards .card__tag_purple {
+    background: #6549d4;
 }
 
 .cards .card__link {
@@ -721,6 +765,15 @@ a {
 
 .cards .card__link:hover {
     background: rgba(213, 226, 252, 0.3333333333);
+}
+
+.cards .card__date {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(16, 16, 16, 0.5);
+    margin-bottom: 12px;
 }
 
 .cards .card_orange {
@@ -755,23 +808,34 @@ a {
     background: url("../img/card_lightgreen.png") no-repeat center/cover;
 }
 
-.cards_394 {
+.cards_394, .cards_596 {
     margin-top: 40px;
     grid-template-columns: repeat(3, 394px);
 }
 
-.cards_394 .card {
+.cards_394 .card, .cards_596 .card {
     z-index: 1;
     border-radius: 32px;
 }
 
-.cards_394 .card__title {
+.cards_394 .card__title, .cards_596 .card__title {
     font-size: 18px;
     line-height: 120%;
 }
 
-.cards_394 .card__content {
-    margin-top: 160px;
+.cards_394 .card__content, .cards_596 .card__content {
+    margin-top: 220px;
+}
+
+.cards_394 .card__tag, .cards_596 .card__tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px 20px 10px 20px;
+}
+
+.cards_596 {
+    grid-template-columns: 596px 596px;
 }
 
 .nordcore {
@@ -790,7 +854,7 @@ a {
 
 .swift {
     background: #ededed;
-    padding: 120px 0;
+    padding: 160px 0px 120px 0;
     position: relative;
 }
 
@@ -803,6 +867,77 @@ a {
 }
 
 .cases {
-    padding: 120px 0;
+    position: relative;
+    padding: 160px 0px 120px 0;
     background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
+}
+
+.cases__btn {
+    margin-top: 24px;
+}
+
+.media {
+    padding: 160px 0px 120px 0;
+    background: #6549d4;
+    position: relative;
+}
+
+.media__btn {
+    margin-top: 24px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: 50px;
+    padding: 10px 32px;
+    background: rgba(252, 252, 252, 0.12);
+    width: 475px;
+    margin-top: 20px;
+}
+
+.tabs__tab {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    transition: all 0.3s ease-in-out;
+    color: rgba(252, 252, 252, 0.6823529412);
+}
+
+.tabs__tab:hover, .tabs__tab_active {
+    color: var(--bg-color);
+}
+
+.motivation {
+    padding: 180px 0;
+    background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
+    position: relative;
+}
+
+.motivation::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url("../img/man_bg.png") no-repeat 85%/contain;
+}
+
+.motivation__btns {
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.motivation__btns .btn_dark {
+    width: max-content;
+}
+
+.feedback {
+    padding: 160px 0 120px 0;
+    position: relative;
+    background: #ededed;
 }

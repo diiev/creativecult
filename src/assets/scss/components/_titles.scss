@@ -3,7 +3,10 @@ font-family: var(--font-family);
 font-weight: 600;
 font-size: 48px;
 line-height: 100%;
-color: #101010;
+color: var(--main-color); 
+    &_white {
+    color: var(--bg-color);
+}
 }
 .btitle {
     &__title {
@@ -17,9 +20,12 @@ color: #101010;
         }
         &-slash {
             color: #4ad6ff;
+            margin-right: 10px;
             &_purple {
                 color: #6549d4;
-                margin-right: 10px;
+            }
+            &_green {
+                color: #02cc89;
             }
         }
         &-sub {
