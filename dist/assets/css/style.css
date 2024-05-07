@@ -538,6 +538,10 @@ a {
     margin-top: 120px;
 }
 
+.header__cards .card__tag {
+    margin-bottom: 8px;
+}
+
 .header__section2 {
     position: relative;
     z-index: 3;
@@ -585,6 +589,10 @@ a {
 
 .title_white {
     color: var(--bg-color);
+}
+
+.title_36 {
+    font-size: 36px;
 }
 
 .btitle__title {
@@ -727,7 +735,6 @@ a {
 }
 
 .cards .card__tag {
-    margin-bottom: 8px;
     display: inline-block;
     font-family: var(--font-family);
     font-weight: 700;
@@ -808,30 +815,100 @@ a {
     background: url("../img/card_lightgreen.png") no-repeat center/cover;
 }
 
-.cards_394, .cards_596 {
+.cards .card__more {
+    margin-top: 17px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(20, 92, 239, 0.8);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    gap: 8px;
+}
+
+.cards .card__more:hover {
+    color: var(--hover-color);
+}
+
+.cards .card__author {
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--main-color);
+}
+
+.cards .card__position {
+    margin-top: 4px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(16, 16, 16, 0.5);
+}
+
+.cards .card__contacts {
+    margin-top: 32px;
+}
+
+.cards .card__contacts a {
+    display: block;
+}
+
+.cards .card__phone {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--main-color);
+}
+
+.cards .card__email {
+    margin-top: 7px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(16, 16, 16, 0.5);
+}
+
+.cards_394, .cards_596, .cards_294 {
     margin-top: 40px;
     grid-template-columns: repeat(3, 394px);
 }
 
-.cards_394 .card, .cards_596 .card {
+.cards_394 .card, .cards_596 .card, .cards_294 .card {
     z-index: 1;
     border-radius: 32px;
 }
 
-.cards_394 .card__title, .cards_596 .card__title {
+.cards_394 .card__title, .cards_596 .card__title, .cards_294 .card__title {
     font-size: 18px;
     line-height: 120%;
 }
 
-.cards_394 .card__content, .cards_596 .card__content {
+.cards_394 .card__content, .cards_596 .card__content, .cards_294 .card__content {
     margin-top: 220px;
+    position: relative;
 }
 
-.cards_394 .card__tag, .cards_596 .card__tag {
+.cards_394 .card__tag, .cards_596 .card__tag, .cards_294 .card__tag {
     position: absolute;
     top: 16px;
     left: 16px;
     padding: 8px 20px 10px 20px;
+}
+
+.cards_394 .card__descr, .cards_596 .card__descr, .cards_294 .card__descr {
+    font-size: 18px;
+    padding: 0;
+}
+
+.cards_394 .card__authors, .cards_596 .card__authors, .cards_294 .card__authors {
+    position: absolute;
+    bottom: 40px;
 }
 
 .cards_596 {
@@ -840,6 +917,25 @@ a {
 
 .cards_596 .card__descr {
     margin-top: 0;
+}
+
+.cards_596 .card__content {
+    margin-top: 265px;
+    height: 360px;
+    padding: 39px;
+}
+
+.cards_294 {
+    grid-template-columns: repeat(4, 294px);
+}
+
+.cards_294 .card__content {
+    margin-top: 152px;
+    position: relative;
+}
+
+.cards_294 .card__tag {
+    top: -60px;
 }
 
 .nordcore {
@@ -944,4 +1040,54 @@ a {
     padding: 160px 0 120px 0;
     position: relative;
     background: #ededed;
+}
+
+.feedback__btn {
+    margin-top: 24px;
+}
+
+.teams {
+    padding: 160px 0 120px 0;
+    background: #dcdde0;
+    position: relative;
+}
+
+.teams__slider, .teams__slider2 {
+    margin-top: 24px;
+}
+
+.teams__title {
+    margin-top: 80px;
+}
+
+.teams .card__img {
+    z-index: 1;
+}
+
+.teams .cards__tag {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+}
+
+.teams .card__tag {
+    position: relative;
+}
+
+.teams .card__title {
+    font-size: 22px;
+}
+
+.teams__slider .card__content {
+    padding: 120px 30px 40px 40px;
+}
+
+.teams__slider2 .card__content {
+    padding: 110px 42px 32px 32px;
+}
+
+.teams .card__descr {
+    font-size: 14px;
 }

@@ -44,7 +44,6 @@
         margin-top: 40px;
     }
     &__tag {
-        margin-bottom: 8px;
         display: inline-block;
         font-family: var(--font-family);
         font-weight: 700;
@@ -111,9 +110,60 @@
     &_lightgreen {
         background: url('../img/card_lightgreen.png') no-repeat  center / cover;
     } 
-  
+    &__more {
+        margin-top: 17px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: rgb(20, 92, 239, .8);
+        transition: all .3s ease-in-out;
+        display: flex;
+        gap: 8px;
+        &:hover {
+            color: var(--hover-color);
+        }
+    }
+    &__author {
+        margin-top: 40px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--main-color);
+    }
+    &__position {
+        margin-top: 4px;
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: rgb(16, 16, 16, .5);
+    } 
+    &__contacts {
+        margin-top: 32px;
+        a {
+            display: block;
+        }
+        
+    }
+    &__phone {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color:var(--main-color);
+    }
+    &__email {
+        margin-top: 7px;
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: rgb(16, 16, 16,.5);    
+    }
   } 
-  &_394, &_596 {
+  &_394, &_596,  &_294 {
     margin-top: 40px;
     grid-template-columns: repeat(3, 394px);
        .card {
@@ -127,6 +177,8 @@
         }
         .card__content {
             margin-top: 220px;
+            position: relative;
+
         }
         .card__tag {
             position: absolute;
@@ -135,11 +187,36 @@
             padding: 8px 20px 10px 20px;
            
         }
+        .card__descr {
+            font-size: 18px;
+            padding: 0;
+        }
+        .card__authors {
+            position: absolute;
+            bottom: 40px;
+        
+        }
     } 
     &_596 {
         grid-template-columns: 596px 596px;
         .card__descr {
             margin-top: 0;
+        }
+        .card__content {
+            margin-top: 265px;
+            height: 360px;
+            padding: 39px;
+        }
+    }
+    &_294 {
+        grid-template-columns: repeat(4,294px);
+        .card__content {
+            margin-top: 152px;
+            position: relative;
+           
+        }
+        .card__tag {
+            top: -60px;
         }
     }
 }

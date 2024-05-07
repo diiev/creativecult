@@ -1,0 +1,42 @@
+.teams {
+    padding: 160px 0 120px 0;
+    background: #dcdde0;
+    position: relative;
+    &__slider, &__slider2 {
+        margin-top: 24px;
+    }
+    &__title {
+        margin-top: 80px;
+    }
+    .card__img {
+        z-index: 1;
+    }
+    .cards__tag {
+        display: flex;
+        gap: 8px;
+        position: absolute;
+        z-index: 2;
+        top: 250px;
+    }
+    .card__tag {
+     position: relative;
+    }
+    .card__title {
+        font-size: 22px;
+    }
+    &__slider {
+    .card__content {
+        padding: 120px 30px 40px 40px;
+    }
+    }
+    &__slider2 {
+        .card__content {
+            padding: 110px 42px 32px 32px;
+        }
+       
+    }
+   
+    .card__descr {
+        font-size: 14px;
+    }
+}
