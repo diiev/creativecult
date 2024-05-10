@@ -1,0 +1,102 @@
+.consultaion {
+    padding: 120px 0px;
+    background: #145cef;
+    position: relative;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: auto 500px;
+        gap: 132px;
+    }
+
+    &__title {
+        font-size: 64px;
+    }
+
+    &__descr {
+        margin-top: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: rgba(252, 252, 252, .8);
+    }
+
+    &__social {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 6px;
+        a {
+          
+            &:hover {
+                background: #fcfcfc;
+                color:#000;
+                svg {
+                    path {
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .form {
+        border-radius: 40px;
+        padding: 56px 48px;
+        background: rgba(252, 252, 252, 0.2);
+
+        &__title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 104%;
+            color: #fcfcfc;
+            margin-bottom: 24px;
+        }
+
+        &__inputs {
+            outline: none;
+            border: none;
+            display: block;
+            margin-top: 8px;
+            padding: 16px 24px;
+            width: 404px;
+            background: rgba(252, 252, 252, 0.22);
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 160%;
+            color: rgba(255, 255, 255, 0.7);
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        &__name {
+            border-radius: 12px 12px 0px 0px;
+        }
+
+        &__email {
+            border-radius: 0px 0px 12px 12px;
+        }
+
+        &__descr {
+            margin-top: 32px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 150%;
+            color: #fcfcfc;
+
+            span {
+                font-weight: 700;
+
+                color: #4ad6ff;
+            }
+        }
+      &__btn {
+        margin-top: 16px;
+      }
+    }
+
+}

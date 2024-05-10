@@ -349,6 +349,12 @@ a {
     border-radius: 64px 64px 0px 0px;
 }
 
+.rectangle_consultaion {
+    background: #145cef;
+    top: -64px;
+    border-radius: 64px 64px 0px 0px;
+}
+
 .rectangle_feedback {
     background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
 }
@@ -977,7 +983,7 @@ a {
 }
 
 .media {
-    padding: 160px 0px 120px 0;
+    padding: 160px 0px 160px 0;
     background: #6549d4;
     position: relative;
 }
@@ -1047,7 +1053,7 @@ a {
 }
 
 .teams {
-    padding: 160px 0 120px 0;
+    padding: 160px 0 160px 0;
     background: #dcdde0;
     position: relative;
 }
@@ -1086,4 +1092,103 @@ a {
 
 .teams .card__descr {
     font-size: 14px;
+}
+
+.consultaion {
+    padding: 120px 0px;
+    background: #145cef;
+    position: relative;
+}
+
+.consultaion__wrapper {
+    display: grid;
+    grid-template-columns: auto 500px;
+    gap: 132px;
+}
+
+.consultaion__title {
+    font-size: 64px;
+}
+
+.consultaion__descr {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(252, 252, 252, 0.8);
+}
+
+.consultaion__social {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 6px;
+}
+
+.consultaion__social a:hover {
+    background: #fcfcfc;
+    color: #000;
+}
+
+.consultaion__social a:hover svg path {
+    fill: #000;
+}
+
+.consultaion .form {
+    border-radius: 40px;
+    padding: 56px 48px;
+    background: rgba(252, 252, 252, 0.2);
+}
+
+.consultaion .form__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 104%;
+    color: #fcfcfc;
+    margin-bottom: 24px;
+}
+
+.consultaion .form__inputs {
+    outline: none;
+    border: none;
+    display: block;
+    margin-top: 8px;
+    padding: 16px 24px;
+    width: 404px;
+    background: rgba(252, 252, 252, 0.22);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.consultaion .form__inputs::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.consultaion .form__name {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.consultaion .form__email {
+    border-radius: 0px 0px 12px 12px;
+}
+
+.consultaion .form__descr {
+    margin-top: 32px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fcfcfc;
+}
+
+.consultaion .form__descr span {
+    font-weight: 700;
+    color: #4ad6ff;
+}
+
+.consultaion .form__btn {
+    margin-top: 16px;
 }
