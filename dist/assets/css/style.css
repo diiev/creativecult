@@ -318,6 +318,11 @@ a {
     justify-content: center;
 }
 
+.btn_circle {
+    border-radius: 100px;
+    padding: 16px;
+}
+
 .rectangle {
     position: absolute;
     width: 100%;
@@ -1060,6 +1065,21 @@ a {
 
 .teams__slider, .teams__slider2 {
     margin-top: 24px;
+    position: relative;
+}
+
+.teams__slider-btn, .teams__slider2-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.teams__slider-btn_left, .teams__slider2-btn_left {
+    left: -100px;
+}
+
+.teams__slider-btn_right, .teams__slider2-btn_right {
+    right: -100px;
 }
 
 .teams__title {
@@ -1191,4 +1211,10 @@ a {
 
 .consultaion .form__btn {
     margin-top: 16px;
+}
+
+.footer {
+    position: relative;
+    padding: 80px 120px 88px 120px;
+    background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
 }

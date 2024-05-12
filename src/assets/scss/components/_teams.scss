@@ -4,10 +4,23 @@
     position: relative;
     &__slider, &__slider2 {
         margin-top: 24px;
+        position: relative;
+        &-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            &_left {
+                left: -100px;
+            }
+            &_right {
+                right: -100px;
+            }
+        }
     }
     &__title {
         margin-top: 80px;
     }
+   
     .card__img {
         z-index: 1;
     }
