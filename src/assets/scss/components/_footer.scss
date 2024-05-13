@@ -2,5 +2,85 @@
 position: relative;
 padding: 80px 120px 88px 120px;
 background: linear-gradient(135deg, #1c274a 0%, #040711 100%);
+&__top {
+    display: flex;
+    justify-content: space-between;
+}
+&__divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 48px;
+}
+&__adress {
+    div {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bg-color)
+    }
+    color: rgba(252, 252, 252, .7);
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
 
+}
+&__contacts {
+    a {
+        display: block;
+    }
+}
+&__email {
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+text-align: right;
+color: rgba(252, 252, 252, .7);
+}
+&__phone {
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 22px;
+line-height: 116%;
+color: var(--bg-color)
+}
+&__midle {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    &-title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--bg-color);
+        margin-bottom: 6px;
+    }
+}
+&__menu {
+  
+    display: flex;
+    gap: 150px;
+    &-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &-link {
+        display: block;
+        margin-bottom: 10px;;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: rgba(252, 252, 252, .7);
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: var(--bg-color);
+        }
+    }
+}
 }
