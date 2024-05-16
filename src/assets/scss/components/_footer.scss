@@ -159,7 +159,10 @@ color: var(--bg-color);
         display: flex;
         justify-content: center;
         align-items:center;
-        background: rgba(252, 252, 252, 0.1);
+        background: rgba(252, 252, 252, .1);
+        &:hover {
+                background: darken(#fcfcfc1a, 50%)
+        }
     }
 }
 &__bottom {
