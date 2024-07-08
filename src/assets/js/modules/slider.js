@@ -9,11 +9,11 @@ try {
         items: 1,
         nav: false,
         navAsThumbnails: true,
-        controls: false, 
+        controls: true, 
         gutter: 46,
         loop: true,
-        "flexWidth": 300,
-        freezable: false,
+        "flexWidth": 400,
+    
         responsive: {
             425: {
                 items: 1

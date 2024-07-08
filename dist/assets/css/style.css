@@ -1217,6 +1217,10 @@ a {
     position: relative;
 }
 
+.teams__slider2 {
+    display: block;
+}
+
 .teams__slider, .teams__slider2 {
     margin-top: 24px;
     position: relative;
