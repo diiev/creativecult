@@ -477,6 +477,11 @@ a {
     padding: 16px;
 }
 
+.one_bg, .two_bg, .three_bg, .four_bg {
+    position: absolute;
+    filter: blur(15px);
+}
+
 .rectangle {
     position: absolute;
     width: 100%;
@@ -522,6 +527,26 @@ a {
     background: rgba(1, 7, 29, 0.9843137255);
     padding-top: 16px;
     position: relative;
+    z-index: 99;
+}
+
+.header .one_bg {
+    right: 0;
+    rotate: 360deg;
+    z-index: 1;
+    top: 179px;
+}
+
+.header .two_bg {
+    left: -130px;
+    top: -27px;
+    z-index: -1;
+    transform: rotate(-4deg);
+}
+
+.header .three_bg {
+    bottom: 0;
+    left: 0;
 }
 
 .header__logo {
@@ -1015,7 +1040,7 @@ a {
 }
 
 .cards .card__contacts {
-    margin-top: 32px;
+    margin-top: 55px;
 }
 
 .cards .card__contacts a {
@@ -1211,64 +1236,78 @@ a {
     margin-top: 24px;
 }
 
-.teams {
+.teams, .holding {
     padding: 160px 0 160px 0;
     background: #dcdde0;
     position: relative;
 }
 
-.teams__slider2 {
-    display: block;
-}
-
-.teams__slider, .teams__slider2 {
+.teams__slider, .holding__slider {
+    display: flex;
+    justify-content: center;
     margin-top: 24px;
     position: relative;
 }
 
-.teams__slider-btn, .teams__slider2-btn {
+.teams__slider-wrapper, .holding__slider-wrapper {
+    position: relative;
+}
+
+.teams__slider-btn, .holding__slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.teams__slider-btn_left, .teams__slider2-btn_left {
+.teams__slider-btn_left, .holding__slider-btn_left {
     left: -100px;
 }
 
-.teams__slider-btn_right, .teams__slider2-btn_right {
+.teams__slider-btn_right, .holding__slider-btn_right {
     right: -100px;
 }
 
-.teams__title {
+.teams__title, .holding__title {
     margin-top: 80px;
 }
 
-.teams .card__img {
+.teams .card__img, .holding .card__img {
     z-index: 1;
 }
 
-.teams .cards__tag {
+.teams .cards__tag, .holding .cards__tag {
     display: flex;
     gap: 8px;
     position: absolute;
     z-index: 2;
+    top: 240px;
+}
+
+.teams #slider-teams .card, .holding #slider-teams .card {
+    width: 394px;
+}
+
+.teams #slider-holding .card, .holding #slider-holding .card {
+    width: 294px;
+}
+
+.teams #slider-holding .cards__tag, .holding #slider-holding .cards__tag {
     top: 250px;
 }
 
-.teams .card__tag {
+.teams .card__tag, .holding .card__tag {
     position: relative;
 }
 
-.teams .card__title {
+.teams .card__title, .holding .card__title {
     font-size: 22px;
 }
 
-.teams .card__content {
-    padding: 120px 32px 32px 32px;
+.teams .card__content, .holding .card__content {
+    padding: 120px 18px 32px 18px;
 }
 
-.teams .card__descr {
+.teams .card__descr, .holding .card__descr {
     font-size: 14px;
 }
 

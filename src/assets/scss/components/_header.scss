@@ -2,24 +2,29 @@
     background: #01071dfb;
     padding-top: 16px;
     position: relative;
+    z-index: 99;
 
+   
+    .one_bg {
+     
+        right:  0;
+        rotate: 360deg;
+        z-index: 1;
+        top: 179px;
 
-    // .one_bg {
-    //     position: absolute;
-    //     right:  0;
-    //     rotate: 360deg;
-    //     z-index: 1;
-    //     bottom: 552px;
-
-    // }
-    // .two_bg {
-    //     position: absolute;
-    // }
-    // .three_bg {
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    // }
+    }
+    .two_bg {
+   
+        left: -130px;
+         top: -27px;
+        z-index: -1;
+        transform: rotate(-4deg);
+    }
+    .three_bg {
+       
+        bottom: 0;
+        left: 0;
+    }
 
     &__logo {
         margin-right: 20px;

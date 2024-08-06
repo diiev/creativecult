@@ -1,13 +1,17 @@
-.teams {
-    &__slider2 {
-        display: block;
-    }
+.teams, .holding {
+  
     padding: 160px 0 160px 0;
     background: #dcdde0;
     position: relative;
-    &__slider, &__slider2 {
+    &__slider {
+        display: flex;
+        justify-content: center;
         margin-top: 24px;
         position: relative;
+       
+        &-wrapper {
+            position: relative;
+        }
         &-btn {
             position: absolute;
             top: 50%;
@@ -26,14 +30,28 @@
    
     .card__img {
         z-index: 1;
-    }
+    } 
     .cards__tag {
         display: flex;
         gap: 8px;
         position: absolute;
         z-index: 2;
-        top: 250px;
+        top: 240px;
     }
+    #slider-teams {
+        .card {
+            width: 394px;
+        }
+    }
+    #slider-holding {
+       .card {
+        width: 294px;
+       }
+        .cards__tag {
+           
+            top: 250px;
+        }
+    } 
     .card__tag {
      position: relative;
     }
@@ -42,7 +60,7 @@
     }
    
     .card__content {
-        padding: 120px 32px 32px 32px;
+        padding: 120px 18px 32px 18px;
     }
     .card__descr {
         font-size: 14px;

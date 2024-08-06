@@ -4,37 +4,75 @@ const slider = () => {
 try {
    
     
-    const _slider = tns({
-        container: '.teams__slider2',
-        items: 1,
-        nav: false,
-        navAsThumbnails: true,
-        controls: true, 
-        gutter: 46,
+    const _sliderTeams = tns({
+        container: '#slider-teams',
+        items: 3,
+        controls: false, 
         loop: true,
-        "flexWidth": 400,
+        nav: false,
+        
+        
+       
     
-        responsive: {
-            425: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            1024: {
-                items: 2,
-                gutter: 10,
-            },
-            1440: {
-                items: 3,
+        // responsive: {
+        //     425: {
+        //         items: 1
+        //     },
+        //     768: {
+        //         items: 2
+        //     },
+        //     1024: {
+        //         items: 3,
+        //         gutter: 10,
+        //     },
+        //     1440: {
+        //         items: 4,
               
-            }
-          }
+        //     }
+        //   }
+         
+    });  
+    document.querySelector('.teams__slider-btn_left').addEventListener('click',function () {
+        _sliderTeams.goTo('prev');
+      });
+      document.querySelector('.teams__slider-btn_right').addEventListener('click',function () {
+        _sliderTeams.goTo('next');
+      });
+    const _sliderHolding = tns({
+        container: '#slider-holding',
+        items: 4,
+        controls: false, 
+        loop: true,
+        nav: false,
+        
+        
+       
+    
+        // responsive: {
+        //     425: {
+        //         items: 1
+        //     },
+        //     768: {
+        //         items: 2
+        //     },
+        //     1024: {
+        //         items: 3,
+        //         gutter: 10,
+        //     },
+        //     1440: {
+        //         items: 4,
+              
+        //     }
+        //   }
          
     });  
  
-
-  
+    document.querySelector('.holding__slider-btn_left').addEventListener('click',function () {
+        _sliderHolding.goTo('prev');
+      });
+      document.querySelector('.holding__slider-btn_right').addEventListener('click',function () {
+        _sliderHolding.goTo('next');
+      });
  
 }
    

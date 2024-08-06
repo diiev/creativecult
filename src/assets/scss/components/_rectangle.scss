@@ -1,3 +1,8 @@
+
+.one_bg, .two_bg, .three_bg, .four_bg {
+    position: absolute;
+    filter: blur(15px);
+}
 .rectangle {
     position:  absolute;
     width: 100%;
